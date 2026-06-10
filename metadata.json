@@ -1,0 +1,6 @@
+{
+  "name": "The Octagon Accra Central",
+  "description": "Premium multi-use corporate and leasing website for The Octagon, Accra Central, featuring office space planning, interactive floor selectors, amenities configuration, and custom booking tours.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

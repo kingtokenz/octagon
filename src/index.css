@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-beige: #f9f6f0;
+  --color-brand-primary: #14161B; /* Bento Grid Card Background */
+  --color-brand-bg: #0A0B0E; /* Screen Background */
+  --color-brand-dark-secondary: #1C1F26; /* Secondary Bento Card Background */
+  --color-brand-accent: #C5A059; /* Rich gold/bronze accent */
+  --color-brand-accent-hover: #b4966d;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-slate-200 font-sans antialiased selection:bg-brand-accent selection:text-black;
+  }
+}
+
+/* Custom scrollbars to maintain premium design */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0B0E;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b4966d;
+}
